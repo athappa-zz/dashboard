@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang='en'>
+<head>
+	<title>Dashboard</title>
+		{% if name %}
+		  <h1>Hello {{ name }}!</h1>
+		{% else %}
+		  <h1>Hey there!</h1>
+		{% endif %}
+	<style>
+		body {
+			text-align: center;
+			background: orange;
+			color: white;
+			font-family: helvetica;
+		}
+	</style>
+</head>
+
+<body>
+		Home
+		<a href="{{ url_for('about') }}">About</a>	
+
+</body>
+
+</html>
+
+
